@@ -43,6 +43,8 @@ public class WoltersKluwerOpenIdConnectBehavior(WoltersKluwerIdentityOptions wol
         options.ClaimActions.MapAll();
         options.ResponseType = OpenIdConnectResponseType.Code;
         options.Events = _events;
+        Uri callbackUri = new Uri($"{woltersKluwerIdentityOptions.RedirectUrl}");
+        options.CallbackPath = callbackUri.AbsolutePath;
 
         foreach (var scope in woltersKluwerIdentityOptions.Scopes)
         {
