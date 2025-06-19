@@ -10,10 +10,10 @@ Es imprescindible disponer de un client OAuth (puedes solicitarlo [aquí](https:
 Antes de poder probar la aplicación, edita el fichero ``appsettings.json para ajustarlo a tu configuración:
 - ``ClientId``: especifica el nombre del client OAuth que te hemos asignado (p.e. WK.ES.A3WebApi.12345)
 - ``ClientSecret``: secret del client OAuht (p.e. dyd4dktgzdFnfPIm)
-- ``AuthenticationScopes``: los scopes varían en función de la aplicación a3innuva a la que quieres conectar:
-	a3innuva Nómina: offline_access+openid+IDInfo+WK.ES.A3EquipoContex  
-	a3innuva Contabilidad: offline_access+openid+WK.ES.NEWPOL.COR.API+WK.ES.NEWPOL.ACC.API+WK.ES.NEWPOL.MNG.API+WK.ES.Webhooks  
-	a3innuva Facturación: offline_access+openid+IDInfo+read+WK.ES.A3INNUVA.OINV.Access  
+- ``AuthenticationScopes``: los scopes varían en función de la aplicación a3innuva a la que quieres conectar:  
+	- a3innuva Nómina: offline_access+openid+IDInfo+WK.ES.A3EquipoContex  
+	- a3innuva Contabilidad: offline_access+openid+WK.ES.NEWPOL.COR.API+WK.ES.NEWPOL.ACC.API+WK.ES.NEWPOL.MNG.API+WK.ES.Webhooks  
+	- a3innuva Facturación: offline_access+openid+IDInfo+read+WK.ES.A3INNUVA.OINV.Access  
 
 Una vez editado el fichero, ejecuta la aplicación y correrá por defecto en https://localhost:43971/ 
 
